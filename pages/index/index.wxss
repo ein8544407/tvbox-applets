@@ -29,17 +29,19 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20rpx;
+  box-sizing: border-box;
 }
 
 .tool-item {
-  width: 48%;
+  width: 46%;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 24rpx;
-  padding: 40rpx 30rpx;
+  padding: 50rpx 30rpx;
   margin-bottom: 30rpx;
   text-align: center;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
 }
 
 .tool-item.disabled {
