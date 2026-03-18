@@ -1,0 +1,21 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="title">🧰 白夜的工具箱</text>
+    <text class="subtitle">实用工具集合</text>
+  </view>
+
+  <view class="grid">
+    <view class="tool-item" bindtap="goToTool" data-url="/pages/tvbox/tvbox">
+      <view class="tool-icon">📺</view>
+      <text class="tool-name">TVBox接口</text>
+      <text class="tool-desc">电视直播影视接口</text>
+    </view>
+    
+    <view class="tool-item disabled">
+      <view class="tool-icon">🔗</view>
+      <text class="tool-name">更多工具</text>
+      <text class="tool-desc">即将上线</text>
+    </view>
+  </view>
+</view>

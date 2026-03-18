@@ -1,0 +1,20 @@
+<!--pages/tvbox/tvbox.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="title">📺 TVBox 接口</text>
+    <text class="subtitle" wx:if="{{updateTime}}">更新于: {{updateTime}}</text>
+  </view>
+
+  <view class="list">
+    <block wx:for="{{interfaces}}" wx:key="index">
+      <view class="item" bindtap="copyUrl" data-url="{{item.url}}">
+        <view class="item-header">
+          <text class="item-name">{{item.name}}</text>
+          <text class="item-badge">点击复制</text>
+        </view>
+        <text class="item-url">{{item.url}}</text>
+        <text class="item-desc">{{item.desc}}</text>
+      </view>
+    </block>
+  </view>
+</view>
